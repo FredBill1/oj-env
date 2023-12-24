@@ -11,8 +11,11 @@ END_NUM = 12
 
 INPUT_FILE = Path("input.txt")
 
-SRC = Path("templates/main.cpp")
-DST = Path("src")
+CPP_TEMPLATE = Path("templates/main.cpp")
+CPP_SRC = Path("src")
+
+PY_TEMPLATE = Path("templates/main.py")
+PY_SRC = Path("pysrc")
 
 if __name__ == "__main__":
     parser = ArgumentParser()
@@ -41,14 +44,21 @@ if __name__ == "__main__":
             print(f"Invalid numbers: {start=} {end=}")
             exit(1)
 
-    if DST.exists():
-        rmtree(DST)
-    DST.mkdir(exist_ok=True)
+    if CPP_SRC.exists():
+        rmtree(CPP_SRC)
+    CPP_SRC.mkdir(exist_ok=True)
+    if PY_SRC.exists():
+        rmtree(PY_SRC)
+    PY_SRC.mkdir(exist_ok=True)
+
     INPUT_FILE.touch(exist_ok=True)
 
     if not args.numbers:
         for c in range(ord(start.upper()), ord(end.upper()) + 1):
-            copy(SRC, DST / f"{chr(c)}.cpp")
+            copy(CPP_TEMPLATE, CPP_SRC / f"{chr(c)}.cpp")
+            copy(PY_TEMPLATE, PY_SRC / f"{chr(c)}.py")
     else:
         for i in range(int(start), int(end) + 1):
-            copy(SRC, DST / f"{i}.cpp")
+            copy(CPP_TEMPLATE, CPP_SRC / f"{i}.cpp")
+            copy(PY_TEMPLATE, PY_SRC / f"{i}.py")
+    print("Done.")

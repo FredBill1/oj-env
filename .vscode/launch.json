@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "args": [
+                "<",
+                "input.txt"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": true,
+            "name": "Python: Current File",
+            "program": "${file}",
+            "request": "launch",
+            "type": "python"
+        }
+    ],
+    "version": "0.2.0"
+}

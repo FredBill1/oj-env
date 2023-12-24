@@ -1,0 +1,6 @@
+[submodule "libraries/ac-library"]
+	path = libraries/ac-library
+	url = https://github.com/atcoder/ac-library.git
+[submodule "libraries/algo"]
+	path = libraries/algo
+	url = https://github.com/the-tourist/algo.git
