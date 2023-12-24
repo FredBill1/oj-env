@@ -1,0 +1,47 @@
+{
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "black-formatter.args": [
+        "-l 150"
+    ],
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.experimentalFeatures": "enabled",
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    "C_Cpp.inlayHints.parameterNames.enabled": true,
+    "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false,
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+    "clangd.arguments": [
+        "-clang-tidy",
+        "-background-index",
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--header-insertion-decorators"
+    ],
+    "cmake.configureOnEdit": false,
+    "cmake.configureOnOpen": false,
+    "cmake.debugConfig": {
+        "args": [
+            "<input.txt"
+        ],
+        "cwd": "${workspaceFolder}"
+    },
+    "cmake.generator": "Ninja",
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.outputLogEncoding": "auto",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "editor.formatOnSave": true,
+    "files.associations": {
+        ".clang-format": "yaml",
+        ".clangd": "yaml"
+    },
+    "isort.args": [
+        "-l 150"
+    ],
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}

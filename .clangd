@@ -1,0 +1,6 @@
+Diagnostics:
+    Suppress:
+        - no_declarators
+        - misc-definitions-in-headers
+        - unused-const-variable
+        - misleading-indentation
