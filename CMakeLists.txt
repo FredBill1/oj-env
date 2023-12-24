@@ -8,6 +8,7 @@ include_directories(libraries/ac-library)
 
 if(MSVC)
     include_directories(utils/bits_stdc++)
+    add_compile_options(/Zc:__cplusplus)
 endif()
 
 foreach(CPP_FILE ${CPP_FILES})
