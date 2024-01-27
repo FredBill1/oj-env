@@ -31,7 +31,7 @@
         ],
         "cwd": "${workspaceFolder}"
     },
-    "cmake.generator": "Ninja",
+    "cmake.generator": "Ninja Multi-Config",
     "cmake.options.statusBarVisibility": "visible",
     "cmake.outputLogEncoding": "auto",
     "debug.internalConsoleOptions": "openOnSessionStart",
