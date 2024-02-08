@@ -4,3 +4,6 @@
 [submodule "libraries/algo"]
 	path = libraries/algo
 	url = https://github.com/the-tourist/algo.git
+[submodule "libraries/testlib"]
+	path = libraries/testlib
+	url = https://github.com/MikeMirzayanov/testlib.git

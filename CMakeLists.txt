@@ -4,6 +4,7 @@ project(cppoj LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 20)
 
 include_directories(libraries/ac-library)
+include_directories(libraries/testlib)
 
 if(MSVC)
     include_directories(utils/bits_stdc++)
