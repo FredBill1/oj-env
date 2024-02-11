@@ -19,3 +19,6 @@ foreach(CPP_FILE ${CPP_FILES})
     add_executable(${CPP_FILE_NAME} ${CPP_FILE})
     target_precompile_headers(${CPP_FILE_NAME} PRIVATE <bits/stdc++.h>)
 endforeach()
+
+file(TOUCH ${CMAKE_CURRENT_BINARY_DIR}/dummy.cpp)
+add_library(dummy ${CMAKE_CURRENT_BINARY_DIR}/dummy.cpp)
