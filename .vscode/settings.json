@@ -36,6 +36,7 @@
     "cmake.outputLogEncoding": "auto",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "editor.formatOnSave": true,
+    "editor.inlayHints.enabled": "offUnlessPressed",
     "files.associations": {
         ".clang-format": "yaml",
         ".clangd": "yaml"
