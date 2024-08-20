@@ -33,6 +33,17 @@
     },
     "cmake.generator": "Ninja Multi-Config",
     "cmake.options.statusBarVisibility": "visible",
+    "cmake.options.advanced": {
+        "cpack": {
+            "statusBarVisibility": "hidden"
+        },
+        "ctest": {
+            "statusBarVisibility": "hidden"
+        },
+        "workflow": {
+            "statusBarVisibility": "hidden"
+        }
+    },
     "cmake.outputLogEncoding": "auto",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "editor.formatOnSave": true,
