@@ -18,10 +18,11 @@
     "C_Cpp.intelliSenseEngineFallback": "enabled",
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
     "clangd.arguments": [
-        "-clang-tidy",
-        "-background-index",
+        "--clang-tidy",
+        "--background-index",
         "--compile-commands-dir=${workspaceFolder}/build",
-        "--header-insertion-decorators"
+        "--header-insertion-decorators",
+        "--header-insertion=never"
     ],
     "cmake.configureOnEdit": false,
     "cmake.configureOnOpen": false,
