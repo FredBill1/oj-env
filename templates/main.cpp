@@ -19,12 +19,12 @@ print(T...y){bool f=0;(((f?putchar(' '):f=1),output(y)),...);}template<class...T
 // clang-format on
 // constexpr ll MOD = 998244353;
 constexpr ll MOD = (ll)1e9 + 7;
-constexpr int MAXN = (int)1e5 + 5;
 
 int N;
-int a[MAXN];
+vector<int> a;
 ll solve() {
     input(N);
+    a.resize(N + 1);
     rep(i, 1, N) input(a[i]);
     return 0;
 }
