@@ -16,8 +16,12 @@ file(GLOB_RECURSE CPP_FILES src/*.cpp)
 
 foreach(CPP_FILE ${CPP_FILES})
     get_filename_component(CPP_FILE_NAME ${CPP_FILE} NAME_WE)
-    add_executable(${CPP_FILE_NAME} ${CPP_FILE})
-    target_precompile_headers(${CPP_FILE_NAME} PRIVATE <bits/stdc++.h>)
+
+    if(NOT ${CPP_FILE_NAME} MATCHES ".* .*") # ignore file names with spaces
+        message(STATUS "Adding executable: ${CPP_FILE_NAME}")
+        add_executable(${CPP_FILE_NAME} ${CPP_FILE})
+        target_precompile_headers(${CPP_FILE_NAME} PRIVATE <bits/stdc++.h>)
+    endif()
 endforeach()
 
 file(TOUCH ${CMAKE_CURRENT_BINARY_DIR}/dummy.cpp)
