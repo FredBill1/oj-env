@@ -5,7 +5,7 @@ using namespace std;
 #define dop(i, s, e) for (auto i = (s); i >= (e); --i)
 // clang-format off
 using ll=long long;using ull=unsigned long long;using PI=pair<int,int>;using PL=pair<ll,ll>;using PIL=pair<int,ll>;
-using PLI=pair<ll,int>;using VI=vector<int>;using VL=vector<ll>;
+using PLI=pair<ll,int>;using VI=vector<int>;using VL=vector<ll>;using VVI=vector<VI>;using VVL=vector<VL>;
 template<class T,class U>void chkmin(T&a,U b){if(a>b)a=b;}template<class T,class U>void chkmax(T&a,U b){if(a<b)a=b;}
 #if 1
 char nc(){constexpr int NCBUF=1<<21;static char b[NCBUF],*x=b,*y=b;return x==y&&(y=(x=b)+fread(b,1,NCBUF,stdin),x==y
@@ -25,12 +25,12 @@ println(T...y){print(y...);cout<<'\n';}
 // constexpr ll MOD = 998244353;
 constexpr ll MOD = (ll)1e9 + 7;
 
-int N;
-vector<int> a;
 ll solve() {
+    int N;
     input(N);
-    a.resize(N + 1);
+    VI a(N + 1);
     rep(i, 1, N) input(a[i]);
+
     return 0;
 }
 
