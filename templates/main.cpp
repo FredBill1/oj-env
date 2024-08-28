@@ -1,12 +1,20 @@
 #include <bits/stdc++.h>
-using namespace std;
+// clang-format off
+#ifdef _MSC_VER
+#if __has_include(<__msvc_int128.hpp>)
+#include <__msvc_int128.hpp>
+using i128=std::_Signed128;using u128=std::_Unsigned128;
+#endif
+#else
+using i128=__int128_t;using u128=__uint128_t;
+#endif
 #define rep(i, s, e) for (auto i = (s); i <= (e); ++i)
 #define per(i, e, s) for (auto i = (s); i >= (e); --i)
 #define dop(i, s, e) for (auto i = (s); i >= (e); --i)
-// clang-format off
-using ll=long long;using ull=unsigned long long;using PI=pair<int,int>;using PL=pair<ll,ll>;using PIL=pair<int,ll>;
-using PLI=pair<ll,int>;using VI=vector<int>;using VL=vector<ll>;using VVI=vector<VI>;using VVL=vector<VL>;
-template<class T,class U>void chkmin(T&a,U b){if(a>b)a=b;}template<class T,class U>void chkmax(T&a,U b){if(a<b)a=b;}
+using namespace std;
+using ll=int64_t;using ull=uint64_t;using PI=pair<int,int>;using PL=pair<ll,ll>;using PIL=pair<int,ll>;using PLI=
+pair<ll,int>;using VI=vector<int>;using VL=vector<ll>;using VVI=vector<VI>;using VVL=vector<VL>;template<class T,
+class U>void chkmin(T&a,U b){if(a>b)a=b;}template<class T,class U>void chkmax(T&a,U b){if(a<b)a=b;}
 #if 1
 char nc(){constexpr int NCBUF=1<<21;static char b[NCBUF],*x=b,*y=b;return x==y&&(y=(x=b)+fread(b,1,NCBUF,stdin),x==y
 )?EOF:*x++;}template<class T>bool input(T&x){x=0;char c=nc();bool f=0;while(c<'0'||c>'9'){if(c==EOF)return 0;f=c=='-'
