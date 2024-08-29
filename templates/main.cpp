@@ -26,16 +26,16 @@ do s.push_back(nc());while(!(s.back()==EOF||isspace(s.back())));s.pop_back();ret
 #else
 template<class...T>bool input(T&...x){return(bool)(cin>>...>>x);}
 #endif
-template<class...T>void print(T...y){bool f=0;(((f?((cout<<' '),0):f=1),cout<<y),...);}template<class...T>void
-println(T...y){print(y...);cout<<'\n';}
+template<class T>T input(){T x;input(x);return x;}template<class...T>enable_if_t<1<sizeof...(T),tuple<T...>>input()
+{return{input<T>()...};}template<class...T>void print(T...y){bool f=0;(((f?((cout<<' '),0):f=1),cout<<y),...);}
+template<class...T>void println(T...y){print(y...);cout<<'\n';}
 // clang-format on
 
 // constexpr ll MOD = 998244353;
-constexpr ll MOD = (ll)1e9 + 7;
+constexpr ll MOD = ll(1e9) + 7;
 
 ll solve() {
-    int N;
-    input(N);
+    auto N = input<int>();
     VI a(N + 1);
     rep(i, 1, N) input(a[i]);
 
@@ -44,14 +44,9 @@ ll solve() {
 
 int main() {
     ios::sync_with_stdio(false), cin.tie(0);
-    int T;
-    // cin >> T;
-    input(T);
-    while (T--) {
+    for (auto T = input<int>(); T--;) {
         // solve();
-        // cout << solve() << '\n';
         println(solve());
-        // puts(solve() ? "YES" : "NO");
+        // println(solve() ? "YES" : "NO");
     }
-    return 0;
 }
