@@ -27,12 +27,13 @@ do s.push_back(nc());while(!(s.back()==EOF||isspace(s.back())));s.pop_back();ret
 template<class...T>bool input(T&...x){return(bool)(cin>>...>>x);}
 #endif
 template<class T>T input(){T x;input(x);return x;}template<class...T>enable_if_t<1<sizeof...(T),tuple<T...>>input()
-{return{input<T>()...};}template<class...T>void print(T...y){bool f=0;(((f?((cout<<' '),0):f=1),cout<<y),...);}
-template<class...T>void println(T...y){print(y...);cout<<'\n';}
+{return{input<T>()...};}template<class T,int N>auto input(){array<T,N>a;for(T&x:a)input(x);return a;}template<class
+...T>void print(T...y){bool f=0;(((f?((cout<<' '),0):f=1),cout<<y),...);}template<class...T>void println(T...y){
+print(y...);cout<<'\n';}
 // clang-format on
 
 // constexpr ll MOD = 998244353;
-constexpr ll MOD = ll(1e9) + 7;
+constexpr ll MOD = int(1e9) + 7;
 
 ll solve() {
     auto N = input<int>();
