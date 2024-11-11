@@ -8,7 +8,7 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
             "justMyCode": true,
-            "name": "Python: Current File",
+            "name": "py",
             "program": "${file}",
             "request": "launch",
             "type": "debugpy"
