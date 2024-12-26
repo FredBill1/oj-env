@@ -34,6 +34,7 @@ print(y...);cout<<'\n';}
 
 // constexpr ll MOD = 998244353;
 constexpr ll MOD = int(1e9) + 7;
+constexpr auto INF = numeric_limits<ll>::max();
 
 ll solve() {
     auto N = input<int>();
