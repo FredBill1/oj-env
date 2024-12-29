@@ -1,8 +1,6 @@
 {
     "recommendations": [
-        "jeff-hykin.better-cpp-syntax",
         "aaron-bond.better-comments",
-        "ms-vscode.cpptools-themes",
         "ms-python.black-formatter",
         "ms-vscode.cpptools",
         "ms-vscode.cpptools-extension-pack",

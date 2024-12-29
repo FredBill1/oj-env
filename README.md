@@ -38,7 +38,9 @@ git submodule update --init --depth=1
 
 ### 1.3.1 Install Extensions
 
-Press `F1` or `Ctrl+Shift+P` to open the command palette, type and select `Extensions: Show Recommended Extensions `. Then install the extensions shown in `WORKSPACE RECOMMENDATIONS` (which are specified in [`.vscode/extensions.json`](.vscode/extensions.json)). Note that the clangd executable will be prompted to be automatically installed when installing the `clangd` extension.
+Press `F1` or `Ctrl+Shift+P` to open the command palette, type and select `Extensions: Show Recommended Extensions `. Then install the extensions shown in `WORKSPACE RECOMMENDATIONS` (which are specified in [`.vscode/extensions.json`](.vscode/extensions.json)).
+
+Note that the clangd executable will be prompted to be automatically installed when installing the `clangd` extension. If missed, you can still use `F1` or `Ctrl+Shift+P` to open the command palette, type and select `clangd: Download language server` to install it.
 
 ### 1.3.2 Configure Keybindings
 
