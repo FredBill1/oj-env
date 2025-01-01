@@ -33,7 +33,6 @@
         "cwd": "${workspaceFolder}"
     },
     "cmake.generator": "Ninja Multi-Config",
-    "cmake.options.statusBarVisibility": "visible",
     "cmake.options.advanced": {
         "cpack": {
             "statusBarVisibility": "hidden"
@@ -45,6 +44,7 @@
             "statusBarVisibility": "hidden"
         }
     },
+    "cmake.options.statusBarVisibility": "visible",
     "cmake.outputLogEncoding": "auto",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "editor.formatOnSave": true,
@@ -56,5 +56,13 @@
     "isort.args": [
         "-l 150"
     ],
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.supportDocstringTemplate": true,
+    "python.languageServer": "Pylance",
     "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }
