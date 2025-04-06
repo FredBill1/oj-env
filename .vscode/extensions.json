@@ -4,8 +4,6 @@
         "ms-python.black-formatter",
         "ms-vscode.cpptools",
         "llvm-vs-code-extensions.vscode-clangd",
-        "twxs.cmake",
-        "josetr.cmake-language-support-vscode",
         "ms-vscode.cmake-tools",
         "albymor.increment-selection",
         "oderwat.indent-rainbow",

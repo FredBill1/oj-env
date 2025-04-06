@@ -15,7 +15,6 @@
     "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false,
     "C_Cpp.inlayHints.referenceOperator.enabled": true,
     "C_Cpp.intelliSenseEngine": "disabled",
-    "C_Cpp.intelliSenseEngineFallback": "enabled",
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
     "clangd.arguments": [
         "--clang-tidy",
