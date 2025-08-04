@@ -3,3 +3,4 @@
 /pysrc
 /.cache
 /input.txt
+__pycache__

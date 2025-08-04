@@ -7,9 +7,22 @@
             ],
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
-            "justMyCode": true,
+            "justMyCode": false,
             "name": "py",
             "program": "${file}",
+            "request": "launch",
+            "type": "debugpy"
+        },
+        {
+            "args": [
+                "${file}",
+                "input.txt"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "name": "leetcode py",
+            "program": "run_leetcode_py.py",
             "request": "launch",
             "type": "debugpy"
         }
