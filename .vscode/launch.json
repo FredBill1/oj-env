@@ -25,6 +25,20 @@
             "program": "run_leetcode_py.py",
             "request": "launch",
             "type": "debugpy"
+        },
+        {
+            "args": [
+                "${file}",
+                "input.txt",
+                "--interactive"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "name": "leetcode py interactive",
+            "program": "run_leetcode_py.py",
+            "request": "launch",
+            "type": "debugpy"
         }
     ],
     "version": "0.2.0"
